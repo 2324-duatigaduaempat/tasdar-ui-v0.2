@@ -2,7 +2,7 @@
 // Pusat sambungan UI ↔ backend TAS.DAR
 
 // TODO: Tukar kepada URL backend sebenar (Randar / Railway / lain)
-const API_BASE_URL = "https://YOUR-TASDAR-BACKEND-URL.com";
+const API_BASE_URL = "https://tasdar-backend.onrender.com";
 
 async function sendMessageToTasdar(message) {
   try {
