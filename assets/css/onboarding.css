@@ -1,0 +1,31 @@
+/* Onboarding specific tweaks */
+
+.onboard-shell {
+  position: relative;
+}
+
+.onboard-shell::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  border: 1px solid rgba(94, 96, 206, 0.3);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Status text */
+
+#onboarding-status {
+  min-height: 16px;
+}
+
+/* Error / success style via JS */
+
+.form-note.is-error {
+  color: var(--danger);
+}
+
+.form-note.is-success {
+  color: var(--accent-strong);
+}

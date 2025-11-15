@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "chat.html", "use": "@vercel/static" },
+    { "src": "onboarding.html", "use": "@vercel/static" },
+    { "src": "assets/**", "use": "@vercel/static" },
+    { "src": "components/**", "use": "@vercel/static" }
+  ]
+}

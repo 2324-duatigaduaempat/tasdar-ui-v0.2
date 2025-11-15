@@ -1,0 +1,62 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgRadial1" cx="0" cy="0" r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(400 0) rotate(70) scale(900 900)">
+      <stop offset="0" stop-color="#3F46B8" stop-opacity="0.9"/>
+      <stop offset="0.4" stop-color="#151935" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#050814" stop-opacity="1"/>
+    </radialGradient>
+
+    <radialGradient id="bgGlowLeft" cx="0" cy="0" r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(220 650) rotate(40) scale(420 320)">
+      <stop offset="0" stop-color="#7F81FF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#050814" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="bgGlowRight" cx="0" cy="0" r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(1320 260) rotate(-30) scale(480 380)">
+      <stop offset="0" stop-color="#FFB2D1" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#050814" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgRadial1)"/>
+
+  <!-- soft blobs -->
+  <circle cx="260" cy="680" r="380" fill="url(#bgGlowLeft)"/>
+  <circle cx="1320" cy="260" r="420" fill="url(#bgGlowRight)"/>
+
+  <!-- subtle grid lines -->
+  <g opacity="0.12" stroke="#A7A9FF" stroke-width="0.5">
+    <line x1="0" y1="150" x2="1600" y2="150"/>
+    <line x1="0" y1="300" x2="1600" y2="300"/>
+    <line x1="0" y1="450" x2="1600" y2="450"/>
+    <line x1="0" y1="600" x2="1600" y2="600"/>
+    <line x1="0" y1="750" x2="1600" y2="750"/>
+
+    <line x1="200" y1="0" x2="200" y2="900"/>
+    <line x1="400" y1="0" x2="400" y2="900"/>
+    <line x1="600" y1="0" x2="600" y2="900"/>
+    <line x1="800" y1="0" x2="800" y2="900"/>
+    <line x1="1000" y1="0" x2="1000" y2="900"/>
+    <line x1="1200" y1="0" x2="1200" y2="900"/>
+    <line x1="1400" y1="0" x2="1400" y2="900"/>
+  </g>
+
+  <!-- vignette -->
+  <rect width="1600" height="900"
+        fill="url(#vignette)"
+        style="mix-blend-mode:multiply; opacity:0.5"/>
+  <defs>
+    <radialGradient id="vignette" cx="0" cy="0" r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(800 450) rotate(90) scale(650 900)">
+      <stop offset="0.4" stop-color="#00000000"/>
+      <stop offset="1" stop-color="#000000"/>
+    </radialGradient>
+  </defs>
+</svg>

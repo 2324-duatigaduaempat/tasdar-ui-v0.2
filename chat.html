@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAS.DAR Chat – Ruang Refleksi</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/chat.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main class="page page-chat">
+    <section class="chat-shell">
+      <header class="chat-shell-header">
+        <div class="chat-shell-title">
+          <img src="assets/img/logo.png" alt="TAS.DAR Logo" class="chat-logo" />
+          <div>
+            <h1>TAS.DAR</h1>
+            <p>Sahabat Jiwa Berasaskan AI</p>
+          </div>
+        </div>
+        <p class="chat-shell-status" id="chat-status">Sedia mendengar…</p>
+      </header>
+
+      <div id="chat-messages" class="chat-messages">
+        <div class="message message-bot">
+          <div class="message-bubble">
+            <p>Hai, aku di sini. Kau tak perlu paksa diri untuk bercerita panjang.</p>
+            <p class="message-sub">
+              Kalau susah nak mula, cuma beritahu satu perkataan:  
+              <strong>penat</strong>, <strong>kosong</strong>, atau <strong>biasa</strong>.
+            </p>
+          </div>
+          <span class="message-meta">TAS.DAR · sekarang</span>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-form">
+        <div class="chat-input-wrapper">
+          <textarea
+            id="chat-input"
+            class="chat-input"
+            rows="1"
+            placeholder="Tulis apa yang ada dalam kepala atau hati kau sekarang…"
+          ></textarea>
+          <button id="chat-send-button" type="submit" class="btn btn-primary chat-send-btn">
+            Hantar
+          </button>
+        </div>
+        <p class="chat-hint">
+          Tekan <kbd>Enter</kbd> untuk hantar, <kbd>Shift + Enter</kbd> untuk baris baru.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Floating Chat Button & Footer -->
+  <div id="floating-button-placeholder"></div>
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/chat.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

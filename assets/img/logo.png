@@ -1,0 +1,58 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="logoBg" cx="0" cy="0" r="1"
+                    gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(18 10) rotate(60) scale(56)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="0.14" stop-color="#C7C8FF" stop-opacity="0.9"/>
+      <stop offset="0.42" stop-color="#7D7FFF"/>
+      <stop offset="0.76" stop-color="#343672"/>
+      <stop offset="1" stop-color="#050814"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer circle -->
+  <circle cx="32" cy="32" r="30"
+          fill="url(#logoBg)"
+          stroke="rgba(255,255,255,0.6)"
+          stroke-width="1.4"/>
+
+  <!-- Inner glow ring -->
+  <circle cx="32" cy="32" r="22"
+          fill="none"
+          stroke="rgba(255,255,255,0.5)"
+          stroke-width="0.9"
+          stroke-dasharray="2 4"
+          stroke-linecap="round"
+          opacity="0.7"/>
+
+  <!-- TD monogram -->
+  <g transform="translate(19,21)">
+    <!-- T bar -->
+    <rect x="4" y="4" width="18" height="3.2" rx="1.6"
+          fill="rgba(5,8,20,0.92)"/>
+    <!-- T stem -->
+    <rect x="11" y="7.2" width="3.1" height="14.5" rx="1.5"
+          fill="rgba(5,8,20,0.92)"/>
+
+    <!-- D outline -->
+    <path d="M4 8.2C4 6.44 5.44 5 7.2 5H13.5C18.2 5 21.8 8.35 21.8 13.05C21.8 17.78 18.2 21.1 13.5 21.1H7.2C5.44 21.1 4 19.66 4 17.9V8.2Z"
+          fill="none"
+          stroke="rgba(5,8,20,0.92)"
+          stroke-width="2.1"
+          stroke-linejoin="round"/>
+
+    <!-- D inner highlight -->
+    <path d="M8 9.4H13.1C15.6 9.4 17.6 11.2 17.6 13.6C17.6 16.1 15.6 17.8 13.1 17.8H8"
+          stroke="#A7A9FF"
+          stroke-width="1.1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          opacity="0.9"/>
+  </g>
+
+  <!-- small bottom text-ish mark -->
+  <rect x="23" y="45" width="18" height="2"
+        rx="1" fill="rgba(255,255,255,0.44)"/>
+</svg>

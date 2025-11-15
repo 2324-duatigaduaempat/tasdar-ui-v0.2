@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Onboarding TAS.DAR – Kenal Kau Dulu</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/onboarding.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div id="navbar-placeholder"></div>
+
+  <main class="page page-onboarding">
+    <section class="onboard-shell">
+      <header class="onboard-header">
+        <p class="badge">Langkah 1 · Onboarding</p>
+        <h1>Kenalkan diri kau pada TAS.DAR</h1>
+        <p>
+          Tak perlu nama penuh. Tak perlu cerita semua.  
+          Cukup beberapa perkara asas, supaya TAS.DAR tahu cara paling lembut untuk hadir.
+        </p>
+      </header>
+
+      <form id="onboarding-form" class="onboard-form">
+        <div class="form-group">
+          <label for="nickname">Nama panggilan / nama rahsia</label>
+          <input
+            type="text"
+            id="nickname"
+            name="nickname"
+            placeholder="Contoh: Saif, L, Moon…"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="language">Bahasa utama yang kau selesa</label>
+          <select id="language" name="language">
+            <option value="bm">Bahasa Melayu</option>
+            <option value="bi">English</option>
+            <option value="rojak">Campur (BM + BI)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="purpose">Apa tujuan utama kau guna TAS.DAR?</label>
+          <select id="purpose" name="purpose">
+            <option value="luah">Meluah & refleksi jiwa</option>
+            <option value="motivasi">Motivasi & sokongan emosi</option>
+            <option value="fokus">Tolong fokus & susun hidup</option>
+            <option value="eksplorasi">Eksplorasi diri & jiwa</option>
+            <option value="lain">Lain-lain</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Kalau sekarang ini, rasa hati kau paling dekat dengan yang mana?</label>
+          <div class="pill-row">
+            <button type="button" class="pill" data-mood="tenang">Tenang tapi letih</button>
+            <button type="button" class="pill" data-mood="serabut">Serabut & berserak</button>
+            <button type="button" class="pill" data-mood="kosong">Kosong & blur</button>
+            <button type="button" class="pill" data-mood="okay">Okay je sebenarnya</button>
+          </div>
+          <input type="hidden" id="mood" name="mood" />
+        </div>
+
+        <div class="form-group">
+          <label for="note">Kalau ada apa-apa nota khas untuk TAS.DAR, tulis di sini.</label>
+          <textarea
+            id="note"
+            name="note"
+            rows="3"
+            placeholder="Contoh: Aku sensitif bab keluarga… atau: jangan terlalu formal dengan aku…"
+          ></textarea>
+        </div>
+
+        <div class="form-group form-group-inline">
+          <label class="checkbox-label">
+            <input type="checkbox" id="agree" required />
+            <span>
+              Aku faham ini ruang refleksi peribadi, dan aku setuju interaksi aku disimpan
+              dalam “Folder Jiwa” untuk bantu TAS.DAR faham aku.
+            </span>
+          </label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Simpan & Terus ke Chat</button>
+          <a href="chat.html" class="btn btn-ghost">Langkau dulu</a>
+        </div>
+
+        <p class="form-note" id="onboarding-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Floating Chat Button & Footer -->
+  <div id="floating-button-placeholder"></div>
+  <div id="footer-placeholder"></div>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/onboarding.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
